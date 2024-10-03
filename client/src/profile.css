@@ -1,0 +1,519 @@
+.searchbar {
+    /* width: 500px; */
+    width: 70%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .searchInput {
+    border: none;
+    width: 100%;  
+  }
+  
+  .topbarIcons {
+    display: flex;
+  }
+  
+  
+  .topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  
+  
+  /* ----------------------Navbar ended ----------------------------*/
+
+  .sidebarWrapper {
+    /* padding-bottom: 200px; */
+    /* padding: 20px; */
+    
+  }
+  
+  .sidebarListItem {
+    display: flex;
+    align-items: start;
+    margin-bottom: 40px;
+  }
+  
+  .sidebarnavitem{
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .sidebar{
+    height: 100vh;
+    width: 220px;
+  }
+  
+  .bg{
+    /* background-color: rgb(233, 228, 228); */
+    /* width: 250px; */
+    position: absolute;
+  }
+  
+  .bg1{
+    background-color:#f2f5f5;
+    border-radius: 10px;
+  }
+  
+  
+  .gradient-buttoncaro2 {
+    padding: 14px 70px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    background:#0994f0;
+    color: white;
+  }
+  
+  .gradient-buttoncaro2:hover {
+    padding: 14px 70px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    background:#138fe3;
+    color: white;
+  }
+  
+  .searchbarpost {
+    /* width: 500px; */
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .searchInputpost {
+    border: none;
+    width: 100%;  
+  }
+  
+  /* .postrow{
+    background-color: rgb(235, 232, 230);
+   
+  } */
+  
+  /* .colorall{
+    background-color: antiquewhite;
+  } */
+  
+
+  .bg11{
+    background-color: #0994f0;
+  }
+
+
+
+
+
+/* ----------------------------------------profile starts---------------------------------------------- */
+
+
+  .profile{
+    display: flex;
+}
+
+.profileRight{
+    flex: 9;
+}
+
+.profileCover{
+    height: 320px;
+    position: relative;
+}
+
+.profileCoverImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profileUserImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    border: 3px solid white;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfoName{
+    font-size: 24px;
+}
+
+.profileInfoDesc{
+    font-weight: 300;
+}
+
+.ProfileEdit{
+   justify-content: end;
+   align-items: end;
+   display: flex;
+}
+
+.EditButton{
+    padding: 8px 30px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-weight: 500;
+    margin-left: 320px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.EditButton:hover{
+    padding: 8px 30px;
+    border-radius: 50px;
+    background-color: #f2efef;
+    font-weight: 500;
+    margin-left: 320px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/*------------------------------------------------------News Feed start-------------------------------------------------- */
+.share {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  }
+  
+  .shareWrapper {
+    padding: 10px;
+  }
+  
+  .shareTop {
+    display: flex;
+    align-items: center;
+  }
+  
+  .shareProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .shareInput {
+    border: none;
+    width: 80%;
+  }
+  
+  .shareInput:focus {
+    outline: none;
+  }
+  
+  .shareHr {
+    margin: 20px;
+  }
+  
+  .shareBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .shareOptions{
+      display: flex;
+      margin-left: 20px;
+  }
+  
+  .shareOption{
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+  
+  .shareIcon{
+      font-size: 18px;
+      margin-right: 3px;
+  }
+  
+  .shareOptionText{
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  
+  .shareButton{
+      border: none;
+      /* padding: 7px; */
+      padding: 10px 30px;
+      border-radius: 25px;
+      background-color: #138fe3;
+      font-weight: 500;
+      margin-right: 20px;
+      cursor: pointer;
+      color: white;
+  }
+  
+  .imgfeed{
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  
+/*------------------------------------------------------Post start-------------------------------------------------- */
+
+
+
+
+.post {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 30px 0;
+  }
+  
+  .postWrapper {
+    padding: 10px;
+  }
+  
+  .postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .postTopLeft {
+    display: flex;
+    align-items: center;
+  }
+
+  .postTopright{
+    cursor: pointer;
+  }
+  
+  .postProfileImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .postUsername {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+  
+  .postDate{
+      font-size: 12px;
+  }
+  
+  .postCenter{
+      margin: 20px 0;
+  }
+  
+  .postImg{
+      margin-top: 20px;
+      width: 100%;
+      max-height: 500px;
+      object-fit: contain;
+  }
+  
+  .postBottom{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .postBottomLeft{
+      display: flex;
+      align-items: center;   
+  }
+  
+  .likeIcon{
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
+      cursor: pointer;
+  }
+  
+  .postLikeCounter{
+      font-size: 15px;
+  }
+  
+  .postCommentText{
+      cursor: pointer;
+      border-bottom: 1px dashed gray;
+      font-size: 15px;
+  }
+  
+
+
+  .rightContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .searchbarright {
+    /* width: 500px; */
+    width: 100%;
+    margin: 20px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .searchInputright {
+    border: none;
+    width: 100%;  
+  }
+  
+  .rightbg{
+   background-color: #f4f2f2;
+   width: 100%;
+   display: flex;
+   border-radius: 10px;
+  }
+  
+  
+  .buttonrightbar {
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    background:#000000;
+    color: white;
+    
+  }
+  
+  .rightwrapper{
+    padding: 5px;
+    text-align: start;
+  }
+  
+  .birthdayContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .birthdayImg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .birthdayText {
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .rightbarAd {
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+
+  .rightbarTitle{
+    margin-bottom: 20px;
+}
+
+.rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rightbarTitle{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightbarInfo{
+  margin-bottom: 30px;
+}
+
+.rightbarInfoItem{
+  margin-bottom: 10px;
+}
+
+.rightbarInfoKey{
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.rightbarInfoValue{
+  font-weight: 300;
+}
+
+.rightbarFollowings{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rightbarFollowing{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.rightbarFollowingImg{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+  .copyright{
+    font-size: small;
+    color: rgb(86, 85, 85);
+  }
+  
+
+  .cmntbg{
+    background-color: #f1f3f3;
+  }
+  .cmntname{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }

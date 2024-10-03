@@ -1,0 +1,545 @@
+.searchbar {
+  /* width: 500px; */
+  width: 70%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchInput {
+  border: none;
+  width: 100%;  
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+
+/* ----------------------Navbar ended ----------------------------*/
+
+
+
+.sidebarWrapper {
+  /* padding-bottom: 200px; */
+  /* padding: 20px; */
+  
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.sidebarnavitem{
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebar{
+  height: 100vh;
+  width: 220px;
+}
+
+.bg{
+  /* background-color: rgb(233, 228, 228); */
+  /* width: 250px; */
+  position: absolute;
+}
+
+.bg1{
+  background-color:#f2f5f5;
+  border-radius: 10px;
+}
+
+
+.gradient-buttoncaro2 {
+  padding: 14px 70px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 50px;
+  background:#0994f0;
+  color: white;
+}
+
+.gradient-buttoncaro2:hover {
+  padding: 14px 70px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 50px;
+  background:#43a7ea;
+  color: white;
+}
+
+.searchbarpost {
+  /* width: 500px; */
+  width: 80%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchInputpost {
+  border: none;
+  width: 100%;  
+}
+
+/* .postrow{
+  background-color: rgb(235, 232, 230);
+ 
+} */
+
+/* .colorall{
+  background-color: antiquewhite;
+} */
+
+
+/*------------------------------------------------------News Feed start-------------------------------------------------- */
+.share {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+.shareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.shareInput {
+  border: none;
+  width: 80%;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 20px;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions{
+    display: flex;
+    margin-left: 20px;
+}
+
+.shareOption{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.shareIcon{
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.shareOptionText{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.postTopright{
+  cursor: pointer;
+}
+
+
+.shareButton{
+    border: none;
+    /* padding: 7px; */
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #138fe3;
+    font-weight: 500;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.shareButton:hover{
+  border: none;
+  /* padding: 7px; */
+  padding: 10px 30px;
+  border-radius: 25px;
+  background-color: #2499e8;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.imgfeed{
+  width: 25px;
+}
+
+
+
+/*------------------------------------------------------Post start-------------------------------------------------- */
+
+
+
+
+.post {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+}
+
+.postWrapper {
+  padding: 10px;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postProfileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postUsername {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.postUsername:hover {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px;
+  text-decoration: underline; 
+  color: #020202;
+}
+
+.postDate{
+    font-size: 12px;
+}
+
+.postCenter{
+    margin: 20px 0;
+}
+
+.postImg{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.postBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postBottomLeft{
+    display: flex;
+    align-items: center;   
+}
+
+.likeIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.postLikeCounter{
+    font-size: 15px;
+}
+
+.postCommentText{
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+    font-size: 15px;
+}
+
+
+
+
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.searchbarright {
+  /* width: 500px; */
+  width: 100%;
+  margin: 20px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchInputright {
+  border: none;
+  width: 100%;  
+}
+
+.rightbg{
+ background-color: #f4f2f2;
+ width: 100%;
+ display: flex;
+ border-radius: 10px;
+}
+
+
+.buttonrightbar {
+  padding: 10px 40px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 50px;
+  background:#000000;
+  color: white;
+  
+}
+
+.rightwrapper{
+  padding: 5px;
+  text-align: start;
+}
+
+
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+}
+
+.birthdayImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.copyright{
+  font-size: small;
+  color: rgb(86, 85, 85);
+}
+
+/*------------------------------------------------ Login starts -----------------------------------------------------*/
+/* .loginbox{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 500px
+}
+
+.login{
+  background: #cdcece;
+}
+
+.bglogin{
+  background :#cdcece;
+}
+
+
+
+.logtitle{
+  font-size: 80px;
+  font-weight: 700;
+  font-family: sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  
+  
+}
+
+.loginh{
+
+  padding-top: 250px;
+}
+
+.logp{
+  font-size: 40px;
+  font-weight: 600;
+  color: #44484b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+@media (max-width: 768px) {  
+  .loginbox {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 28px;
+    margin-bottom: 70px;
+    width: 100%;
+  
+  }
+  .login{
+    background: #cdcece;
+    height: 100vh;
+  }
+  
+  .bglogin{
+    background :#cdcece;
+
+  }
+} */
+
+
+.loginh{
+  padding-top: 225px;
+}
+
+.logtitle{
+  font-size: 80px;
+  font-weight: 700;
+  font-family: sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .logtitle {
+    font-size: 50px;
+  }
+  .logp {
+    font-size: 20px;
+  }
+}
+
+.logp{
+  font-size: 40px;
+  font-weight: 600;
+  color: #44484b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login{
+  background: #cdcece;
+}
+
+.loginbox{
+  margin-top: 120px;
+  margin-bottom: 60px;
+  width: 500px
+}
+
+.signupbox{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 500px
+}
+
+
+
+
+
+/*------------------------------------------------ Login End -----------------------------------------------------*/
+
+.modalcomment{
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.thumbup{
+  cursor: pointer;
+  font-size: 26px;
+}
+.cmntbg{
+  background-color: #f1f3f3;
+}
+.cmntname{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.postusern{
+  cursor: pointer;
+}
+
+/* ......................error validation...................... */
+
+.errors{
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}

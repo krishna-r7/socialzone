@@ -1,0 +1,138 @@
+import react,{useEffect,useState} from 'react'
+import '../style.css'
+import { Route, Link } from 'react-router-dom';
+import { Nav,Navbar,Button,Form, Container,Col,Row,Image,Card } from 'react-bootstrap';
+
+function Signup(){
+    const [form,setForm] = useState({
+        name:'', 
+        contact:'', 
+        dob:'',
+        email:'',
+        password:'',
+        loginid:''
+    });
+
+    const handlechange=(e)=>{
+        const {name,value}=e.target
+        setForm({...form,[name]:value}) 
+        console.log(form)
+    }
+
+    const Submitformdata = async (e) => {
+      e.preventDefault();
+      try {
+        const response = await fetch('/Submitformdata', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          
+          body: JSON.stringify(form),
+       
+         
+        });
+        const d = await response.json()
+        console.log(form)
+      } catch (error) {
+        console.error('Registration failed:', error);
+      }
+    };
+
+
+    return(
+        <div>
+        <Container fluid>
+          <Row>
+            <Col lg={6} className='bglogin'>
+              <Row className='loginh'>
+                <h1 className='logtitle'>Social<span className='text-primary'>Zone</span></h1>
+                <p className='logp'>Happening Now</p>
+              </Row>
+            </Col>
+            <Col lg={6} className='bglogin d-flex'>
+              <div className='login template d-flex justify-content-center align-item-center 100-w vh-110  '>
+                <div className='100-w p-5 rounded-5 bg-white loginbox'>
+                  <Form onSubmit={Submitformdata}>
+                    <h3>Sign Up</h3>
+                    <div className='mb-2'>
+                      <label htmlFor="name">Name</label>
+                      <input
+                        type='name'
+                        placeholder='Enter Name'
+                        value={form.name}
+                        name="name"
+                        className='form-control'
+                        onChange={handlechange}
+                      />
+                    </div>
+                    <div className='mb-2'>
+                      <label htmlFor="Mobile">Mobile Number</label>
+                      <input
+                        type='number'
+                        placeholder='Enter Number'
+                        value={form.contact}
+                        name="contact"
+                        className='form-control'
+                        onChange={handlechange}
+                      />
+                    </div>
+                    <div className='mb-2'>
+                      <label htmlFor="dob">Date Of Birth</label>
+                      <input
+                        type='date'
+                        placeholder='Date of Birth'
+                        value={form.dob}
+                        name="dob"
+                        className='form-control'
+                        onChange={handlechange}
+                      />
+                    </div>
+                    <div className='mb-2'>
+                      <label htmlFor="email">Email</label>
+                      <input
+                        type='email'
+                        placeholder='Enter Email'
+                        value={form.email}
+                        name="email"
+                        className='form-control'
+                        onChange={handlechange}
+                      />
+                    </div>
+                    <div className='mb-4'>
+                      <label htmlFor="password">Password</label>
+                      <input
+                        type='password'
+                        placeholder='Enter Password'
+                        value={form.password}
+                        name="password"
+                        className='form-control'
+                        onChange={handlechange}
+                      />
+                    </div>
+                    <div className='mb-3 d-grid'>
+                      <Button variant='primary' type='submit' className='logbtn'>
+                        Register
+                      </Button>
+                      <hr />
+                    </div>
+                    <div className='mb-3 d-grid'>
+
+                      <p className="mb-0  text-center">
+                        Already have an account??{' '}
+                        <Link to="/" className="text-primary fw-bold">
+                          Sign In
+                        </Link>
+                      </p>
+                    </div>
+                  </Form>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        </div>
+    )
+}
+
+export default Signup

@@ -1,0 +1,65 @@
+
+/*------------------------------------------------ Login starts -----------------------------------------------------*/
+.loginbox{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 500px
+}
+
+.login{
+  background: #cdcece;
+  
+}
+
+.bglogin{
+  background :#cdcece;
+}
+
+
+
+.logtitle{
+  font-size: 80px;
+  font-weight: 700;
+  font-family: sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  
+  
+}
+
+.loginh{
+
+  padding-top: 250px;
+}
+
+.logp{
+  font-size: 40px;
+  font-weight: 600;
+  color: #44484b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* For Mobile screen Login */
+
+@media (max-width: 768px) {  
+  .loginbox {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 28px;
+    margin-bottom: 70px;
+    width: 100%;
+  
+  }
+  .login{
+    background: #cdcece;
+    height: 100vh;
+  }
+  
+  .bglogin{
+    background :#cdcece;
+    /* height: 100; */
+  }
+}
+/*------------------------------------------------ Login End -----------------------------------------------------*/
